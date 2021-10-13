@@ -2,8 +2,10 @@ pyrogram
 tgcrypto
 pytgcalls[pyrogram]
 python-dotenv
-youtube_dl
-youtube_search_python
+youtube_dl==2021.06.06
+
+youtube_search_python==1.4.6
+
 requests
 aiohttp
 aiofiles
