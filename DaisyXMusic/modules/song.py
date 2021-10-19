@@ -28,7 +28,7 @@ import aiofiles
 import aiohttp
 import requests
 import wget
-import yt-dlp
+import yt_dlp
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Message
@@ -343,7 +343,7 @@ async def ytmusic(client, message: Message):
     }
     try:
         is_downloading = True
-        with yt-dlp.YoutubeDL(opts) as ytdl:
+        with yt_dlp.YoutubeDL(opts) as ytdl:
             infoo = ytdl.extract_info(url, False)
             duration = round(infoo["duration"] / 60)
 
