@@ -45,7 +45,7 @@ async def addchannel(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id, "I joined here as you requested")
+        await USER.send_message(message.chat.id, "Yo Pikachu Bro, i am back !!")
     except UserAlreadyParticipant:
         await message.reply_text(
             "<b>helper already in your chat</b>",
@@ -127,7 +127,7 @@ async def addcchannel(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id, "Pikachu Brother's back !")
+        await USER.send_message(message.chat.id, "Yo Pikachu Bro, I am back !")
     except UserAlreadyParticipant:
         await message.reply_text(
             "<b>helper already in your channel</b>",
